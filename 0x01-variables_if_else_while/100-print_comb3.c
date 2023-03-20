@@ -6,21 +6,20 @@
  */
 int main(void)
 {
-int digit1, digit2;
-int is_last_combination;
-for (digit1 = 0; digit1 < 9; digit1++)
+int i, j;
+for (i = 0; i < 10; i++)
 {
-for (digit2 = digit1 + 1; digit2 < 10; digit2++)
+for (j = i + 1; j < 10; j++)
 {
-putchar(digit1 + '0');
-putchar(digit2 + '0');
-is_last_combination = (digit1 == 8 && digit2 == 9);
-if (!is_last_combination)
+putchar(i + '0');
+putchar(j + '0');
+if (i < 8)
 {
 putchar(',');
+putchar(' ');
 }
 }
 }
 putchar('\n');
-return (0);
+return 0;
 }
