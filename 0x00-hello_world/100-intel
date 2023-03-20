@@ -1,13 +1,2 @@
 #!/bin/bash
-
-# Get the C file name from the environment variable
-CFILE=$CFILE
-
-# Generate the assembly code in the AT&T syntax
-gcc -S $CFILE
-
-# Convert the assembly code to the Intel syntax
-objdump -d -M intel $CFILE".o" > $CFILE".s"
-
-# Remove the object file
-rm $CFILE".o"
+CFILE=main.c gcc -S -masm=intel $CFILE && objdump -d -M intel $CFILE".s" > $CFILE".s"
