@@ -17,7 +17,7 @@ else
 {
 start = (len - 1) / 2;
 }
-for (i = start; i < len; i++)
+for (i = start-1; i < len; i++)
 {
 putchar(str[i]);
 }
