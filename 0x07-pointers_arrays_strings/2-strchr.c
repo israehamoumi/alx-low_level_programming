@@ -12,13 +12,12 @@
  */
 char *_strchr(char *s, char c)
 {
-	/* Loop through the string s */
-	while (*s != '\0')
-	{
-		/* If the character is found, return a pointer to it */
-		if (*s == c)
-			return (s);
-
-		s++;
-	}
+for (; *s != '\0'; s++)
+{
+if (*s == c)
+return (s);
+}
+if (*s == c)
+return (s);
+return (NULL);
 }
