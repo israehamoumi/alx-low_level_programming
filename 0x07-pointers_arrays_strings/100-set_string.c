@@ -1,20 +1,8 @@
 #include <stdio.h>
 /**
- * set_string - sets the value of a pointer to a char
- * @s: pointer to pointer to string to set
- * @to: pointer to string to copy
+ * main - Entry point
  *
- * Return: void
- */
-void set_string(char **s, char *to)
-{
-*s = to;
-}
-
-/**
- * main - tests the set_string function
- *
- * Return: Always 0.
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
