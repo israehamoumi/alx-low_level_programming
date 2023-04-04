@@ -1,15 +1,15 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - check the code
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
 int main(void)
 {
-char *s0 = "Bob Dylan";
-char *s1 = "Robert Allen";
-printf("%s, %s\n", s0, s1);
-set_string(&s1, s0);
-printf("%s, %s\n", s0, s1);
+char *str1 = "Hello";
+char *str2 = "World";
+printf("%s, %s\n", str1, str2);
+set_string(&str2, str1);
+printf("%s, %s\n", str1, str2);
 return (0);
 }
