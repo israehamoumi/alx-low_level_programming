@@ -11,16 +11,16 @@ int factorial(int n)
 if (n < 0)
 {
 /* Return -1 to indicate error */
-return -1;
+return (-1);
 }
 /* Base case: 0! = 1 */
 else if (n == 0)
 {
-return 1;
+return (1);
 }
 /* Recursive case: n! = n * (n-1)! */
 else
 {
-return n * factorial(n - 1);
+return (n * factorial(n - 1));
 }
 }
