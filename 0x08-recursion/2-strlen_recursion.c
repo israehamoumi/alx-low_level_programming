@@ -13,7 +13,8 @@ if (*s == '\0')
 {
 return 0;
 }
-/* Recursive case: Return 1 plus the length of the string starting from the
+/* Recursive case: Return 1 plus the
+ * length of the string starting from the
  * next character. */
-return 1 + _strlen_recursion(s + 1);
+return (1 + _strlen_recursion(s + 1));
 }
