@@ -6,10 +6,9 @@
  * all elements of the array with a given character
  * @size: the size of the array to create
  * @c: the character to initialize the array with
- *
  * Return: a pointer to the newly created 
  * array, or NULL if an error occurred
- */
+*/
 char *create_array(unsigned int size, char c)
 {
 char *arr;
