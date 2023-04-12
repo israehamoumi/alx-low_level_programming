@@ -18,10 +18,10 @@ return (NULL);
 for (i = 0; i < ac; i++)
 {
 len = strlen(av[i]);
-total_len += len + 1; /* Add 1 for the newline character */
+total_len + = len + 1; /* Add 1 for the newline character */
 }
 /* Allocate memory for the concatenated string */
-str = malloc(total_len * sizeof(char)+ 1 );
+str = malloc(total_len * sizeof(char)+ 1);
 if (str == NULL)
 return (NULL);
 /* Copy the arguments to the new string, with newlines */
@@ -29,7 +29,7 @@ for (i = 0, j = 0; i < ac; i++)
 {
 len = strlen(av[i]);
 strncpy(str + j, av[i], len);
-j += len;
+j + = len;
 *(str + j) = '\n'; /* Add the newline character */
 j++;
 }
