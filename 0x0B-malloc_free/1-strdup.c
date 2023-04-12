@@ -1,4 +1,4 @@
-#include <stdio.h>>
+#include <stdio.h>
 #include <stdlib.h>
 /**
  * _strdup - creates a duplicate of a string
